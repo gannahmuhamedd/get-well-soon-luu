@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Well Soon, Luu 💗</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #fff5f8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #5b3445;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 30px;
+      padding: 35px 25px;
+      box-shadow: 0 10px 35px rgba(120, 60, 90, 0.15);
+    }
+
+    .heart {
+      font-size: 65px;
+      animation: beat 1.2s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.15);
+      }
+    }
+
+    h1 {
+      font-size: 38px;
+      margin: 15px 0;
+      color: #d95b88;
+    }
+
+    h2 {
+      font-size: 25px;
+      margin: 10px 0 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin: 12px 0;
+    }
+
+    .message {
+      background: #fff0f5;
+      border-radius: 20px;
+      padding: 20px;
+      margin: 25px 0;
+    }
+
+    button {
+      border: none;
+      background: #e878a3;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 30px;
+      font-size: 17px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(216, 91, 136, 0.25);
+    }
+
+    button:hover {
+      background: #d95b88;
+    }
+
+    #secret {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #c44d79;
+      font-weight: bold;
+    }
+
+    .flowers {
+      font-size: 25px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="heart">💗</div>
+
+    <h1>Get Well Soon</h1>
+
+    <h2>Luu 🥹💕</h2>
+
+    <div class="message">
+      <p>
+        I hope you feel better very soon. 🫶🏻
+      </p>
+
+      <p>
+        Take care of yourself, get some rest,
+        and remember that you are loved. 💗
+      </p>
+
+      <p>
+        Sending you lots of love, hugs and good vibes
+        until you're completely okay again. 🌷
+      </p>
+    </div>
+
+    <button onclick="showMessage()">
+      Click me 💌
+    </button>
+
+    <div id="secret">
+      You better get well soon, Luu! 😭💗<br>
+      We miss your healthy version already! 🫂
+    </div>
+
+    <div class="flowers">
+      🌸 🌷 🩷 🌷 🌸
+    </div>
+
+    <audio id="song" controls>
+      <source src="song.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("secret").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
